@@ -56,10 +56,6 @@ const mouseMenu = (el) => {
     })
 }
 
-multiMenu.forEach(el => {
-    (isMobile() ? clickMenu(el) : mouseMenu(el))
-})
-
 let faq = document.querySelectorAll('[data-faq]')
 let contacts = document.querySelectorAll('[data-contacts]')
 

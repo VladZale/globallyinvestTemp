@@ -15,7 +15,7 @@ const langs = {
             trading: 'Trading',
             accountTypes: 'Account types',
             education: 'Trading',
-            ourPlatform: 'Our Platform',
+            ourPlatform: 'Platform',
             cfdTrading: 'Cfd trading',
             technicalAnalysis: 'Technical analysis',
             fundamentalAnalysis: 'Fundamental analysis',

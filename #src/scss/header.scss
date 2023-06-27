@@ -653,11 +653,11 @@
             text-align: center;
             opacity: 0;
             transition: all .8s ease-in-out;
+            display: block;
 
             &._active {
                 top: 0;
                 left: 0;
-                display: block;
                 overflow-x: hidden;
                 opacity: 1;
             }
