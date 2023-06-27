@@ -1,0 +1,890 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="accounts">
+        <div class="accounts__inner">
+            <div class="accounts__item accounts__empty-item">
+                <div class="accounts__empty-head">
+                    <h4 class="accounts__empty-title" data-menu-accountTypes></h4>
+                    <p class="accounts__empty-desc" data-accountTypes-desc></p>
+                </div>
+                <div class="accounts__empty-content">
+                    <ul>
+                        <li class="accounts__list-title" data-menu-stocks></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-forex></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-commodities></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-indices></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-crypto></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-metals></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                    <ul>
+                        <li class="accounts__list-title" data-menu-nft></li>
+                        <li class="accounts__list-item" data-accountTypes-lotSize></li>
+                        <li class="accounts__list-item" data-accountTypes-minVolume></li>
+                        <li class="accounts__list-item" data-accountTypes-maxVolume></li>
+                    </ul>
+                </div>
+                <div class="accounts__empty-footer">
+
+                </div>
+            </div>
+
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title main" data-accountTypes-main></h4>
+
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="0">
+                            <span class="accounts__value main-price"><span data-sign></span><span data-min-price></span></span>
+                            <span class="accounts__step">-</span>
+                            <span class="accounts__value main-price"><span data-sign></span><span data-max-price></span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>-</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>-</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="main-border" data-account="0" data-accountTypes-btnText></a>
+                </div>
+            </div>
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title bronze" data-accountTypes-bronze></h4>
+
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="1">
+                            <span class="accounts__value bronze-price"><span data-sign></span> <span data-min-price></span></span>
+                            <span class="accounts__step">-</span>
+                            <span class="accounts__value bronze-price"><span data-sign></span><span data-max-price></span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>1,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>1,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>1,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="bronze-border" data-account="1" data-accountTypes-btnText></a>
+                </div>
+            </div>
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title silver" data-accountTypes-silver></h4>
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="2">
+                            <span class="accounts__value silver-price"><span data-sign></span> <span data-min-price></span></span>
+                            <span class="accounts__step">-</span>
+                            <span class="accounts__value silver-price"><span data-sign></span><span data-max-price></span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>50,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>5,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>5,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>50,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>50</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>5,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>50</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="silver-border" data-account="2" data-accountTypes-btnText></a>
+                </div>
+            </div>
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title gold" data-accountTypes-gold></h4>
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="3">
+                            <span class="accounts__value gold-price"><span data-sign></span> <span data-min-price></span></span>
+                            <span class="accounts__step">-</span>
+                            <span class="accounts__value gold-price"><span data-sign></span><span data-max-price></span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>70,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>7,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>7,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>70,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>70</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>7,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>70</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="gold-border" data-account="3" data-accountTypes-btnText></a>
+                </div>
+            </div>
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title platinum" data-accountTypes-platinum></h4>
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="4">
+                            <span class="accounts__value platinum-price"><span data-sign></span> <span data-min-price></span></span>
+                            <span class="accounts__step">-</span>
+                            <span class="accounts__value platinum-price"><span data-sign></span><span data-max-price></span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="platinum-border" data-account="4" data-accountTypes-btnText></a>
+                </div>
+            </div>
+            <div class="accounts__item">
+                <div class="accounts__head">
+                    <h4 class="accounts__title vip" data-accountTypes-vip></h4>
+                </div>
+                <div class="accounts__content">
+                    <div class="accounts__price">
+                        <div class="accounts__price-content" data-account-price="5">
+                            <span class="accounts__value vip-price"><span data-sign></span><span data-max-price></span>+</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span data-menu-stocks></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-forex></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-commodities></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-indices></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>10</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-crypto></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-metals-table></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>100,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>1,000</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>10,000,000</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span data-menu-nft></span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-lotSize></span>
+                            <span>1</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-minVolume></span>
+                            <span>0.01</span>
+                        </li>
+                        <li class="accounts__list-item">
+                            <span data-accountTypes-maxVolume></span>
+                            <span>100</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="accounts__footer">
+                    <a data-company-register href="#" class="vip-border" data-account="5" data-accountTypes-btnText></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

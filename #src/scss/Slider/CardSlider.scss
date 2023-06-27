@@ -1,0 +1,156 @@
+.cards-slider {
+  padding: 100px 0px;
+  background-color: black;
+  background-image: url("../../img/bg-finance.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+    z-index: 3;
+  }
+
+  &__items {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__box {
+    width: 50%;
+    text-align: left;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 60px;
+    @media (max-width: 1300px) {
+      font-size: 30px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 26px;
+    color: $DarkTitle;
+    line-height: 120%;
+    @media (max-width: 1300px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 16px;
+    }
+  }
+
+  &-info {
+    text-align: center;
+    @media (max-width: 1000px) {
+      font-size: 16px;
+    }
+  }
+
+  &-info__number {
+    font-size: 78px;
+    line-height: 140%;
+    @media (max-width: 1000px) {
+      font-size: 48px;
+    }
+  }
+}
+
+.slider-card {
+  margin: 0 50px auto auto;
+  @media (max-width: 1300px) {
+    margin: auto;
+  }
+}
+
+.swiper.slider-card {
+  width: 280px;
+  height: 320px;
+
+  @media (max-width: 1000px) {
+    width: 140px;
+    height: 220px;
+  }
+
+}
+.swiper-cards .swiper-slide{
+  overflow: revert;
+}
+
+.slider-card > .swiper-wrapper > .swiper-slide {
+
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    border-radius: 2px;
+    transform: skewX(2deg) skewY(4deg);
+    width: 110%;
+    height: 105%;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    transform: skewX(2deg) skewY(4deg);
+    width: 110%;
+    height: 105%;
+    background: linear-gradient(315deg, #00ccff, #0e1538, #d400d4);
+    border-radius: 2px;
+  }
+}
+
+.slider-card > .swiper-wrapper > .swiper-slide.swiper-slide-active {
+  box-shadow: 0 0 30px 5px rgba(40, 39, 39, 0.3);
+
+}
+
+.swiper-slide__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  z-index: 20;
+  border-radius: 5px;
+  box-shadow: rgb(56 56 56 / 65%) 0 0 4px 4px inset;
+}

@@ -1,0 +1,59 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="page">
+        <div class="page__bg"></div>
+
+        <div class="indices__container container">
+            <div class="indices__inner page__inner">
+                <div class="indices__left page__left">
+                    @@include('components/PagesBg/indices.html')
+                </div>
+                <div class="indices__right">
+                    <h2 class="indices__title page__title" data-page-indices></h2>
+                    <div class="indices__content page__content">
+                        <div class="indices__item page__item">
+                            <p class="indices__desc page__desc" data-index-descHead1></p>
+                            <p class="indices__desc page__desc" data-index-descHead2></p>
+                            <ul class="indices__list page__list">
+                                <h5 class="indices__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-index-list1></li>
+                                    <li data-index-list2></li>
+                                    <li data-index-list3></li>
+                                    <li data-index-list4></li>
+                                </div>
+                            </ul>
+
+                        </div>
+                        <div class="indices__item page__item">
+                            <h3 class="indices__item-title page__item-title" data-index-understanding></h3>
+                            <p class="stocks__desc page__desc" data-index-textUnderstanding1></p>
+                        </div>
+                        <div class="indices__item page__item">
+                            <h3 class="indices__item-title page__item-title" data-index-market></h3>
+                            <p class="indices__desc page__desc" data-index-textMarket></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indices-majors">
+            <h2 class="table__title" data-index-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+.markets-eggs {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+
+    }
+  }
+
+  &__box-start {
+    @media (max-width: 1000px) {
+      padding-top: 45px;
+      width: 100%;
+    }
+  }
+
+  &__box-items {
+    padding-right: 10px;
+
+    @media (max-width: 1000px) {
+      padding-right: 0px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+    @media (max-width: 1000px) {
+      text-align: left;
+    }
+  }
+  &__box-content{
+    margin-left: 20px;
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+
+  &__box-info {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    width: 50%;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
+  &__box-title {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  &__box-desc {
+    font-size: 16px;
+    color: $fontsColor;
+    @media (max-width: 1000px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  font-size: 34px;
+  border-radius: 10px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1000px) {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
+}
+
+.icons-1 {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+
+}
+
+.icons-2 {
+  background-color: #17f9f2;
+  background-image: linear-gradient(315deg, #17f9f2 0%, #b0f9a9 74%);
+
+}
+
+.icons-3 {
+  background-color: #eaf818;
+  background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+}
+
+.icons-4 {
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.icons-5 {
+  background-color: #f8ceec;
+  background-image: linear-gradient(115deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.icons-6{
+  background-color: #84fb95;
+  background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%);
+}

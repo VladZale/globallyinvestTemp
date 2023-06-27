@@ -1,0 +1,56 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+    <section class="stocks page">
+        <div class="page__bg"></div>
+
+        <div class="stocks__container container">
+            <div class="stocks__inner page__inner">
+                <div class="stocks__left page__left">
+                    @@include('components/PagesBg/stocks.html')
+                </div>
+                <div class="stocks__right">
+                    <h2 class="stocks__title page__title" data-page-stocks></h2>
+                    <div class="stocks__content page__content">
+                        <div class="stocks__item page__item">
+                            <p class="stocks__desc page__desc" data-stocks-descHead1></p>
+                            <p class="stocks__desc page__desc" data-stocks-descHead2></p>
+                            <ul class="stocks__list page__list">
+                                <h5 class="stocks__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-stocks-list1></li>
+                                    <li data-stocks-list2></li>
+                                    <li data-stocks-list3></li>
+                                    <li data-stocks-list4></li>
+                                </div>
+                            </ul>
+
+                        </div>
+                        <div class="stocks__item page__item">
+                            <p class="stocks__item-title page__item-title" data-stocks-understanding></p>
+                            <p class="stocks__desc page__desc" data-stocks-textUnderstanding1></p>
+                            <p class="stocks__desc page__desc" data-stocks-textUnderstanding2></p>
+                            <p class="stocks__desc page__desc" data-stocks-textUnderstanding3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stocks-majors">
+            <h2 class="table__title" data-stocks-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

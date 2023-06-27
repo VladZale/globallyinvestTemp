@@ -1,0 +1,23 @@
+.features-device{
+    position: relative;
+    background-color: #fff;
+    &::after,
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    &::after{
+        background-image: url("../img/features-bg-paper.png");
+        z-index: -1;
+    }
+
+    &::before{
+        background-image: url("../img/features-bg-3.png");
+    }
+}

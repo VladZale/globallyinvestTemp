@@ -1,0 +1,61 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="risk-management page">
+        <div class="page__bg"></div>
+
+        <div class="risk-management__container container">
+            <div class="risk-management__inner page__inner">
+                <div class="risk-management__left page__left">
+                    @@include('components/PagesBg/indicesDev.html')
+                </div>
+                <div class="risk-management__right">
+                    <h2 class="risk-management__title page__title" data-menu-riskManagement></h2>
+                    <div class="risk-management__content page__content">
+                        <div class="risk-management__item page__item">
+                            <h3 class="risk-management__item-title page__item-title" data-riskManagement-riskManagement></h3>
+                            <p class="risk-management__desc page__desc" data-riskManagement-descHead1></p>
+                            <p class="risk-management__desc page__desc" data-riskManagement-descHead2></p>
+
+                            <ul class="risk-management__list page__list">
+                                <h5 class="cfg-trading__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+
+                                    <li data-riskManagement-list1></li>
+                                    <li data-riskManagement-list2></li>
+                                    <li data-riskManagement-list3></li>
+                                    <li data-riskManagement-list4></li>
+                                    <li data-riskManagement-list5></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="risk-management__item page__item">
+                            <h3 class="risk-management__item-title page__item-title" data-riskManagement-understating></h3>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textUnderstating1></p>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textUnderstating2></p>
+                        </div>
+                        <div class="risk-management__item page__item">
+                            <h3 class="risk-management__item-title page__item-title" data-riskManagement-risk></h3>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textRisk1></p>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textRisk2></p>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textRisk3></p>
+                            <p class="risk-management__desc page__desc" data-riskManagement-textRisk4></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.cryptocurrency-dev {
+
+    &__inner {
+        align-items: center;
+    }
+
+    &__right {
+        text-align: right;
+        line-height: 170%;
+        @media (max-width: 1000px) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 80px;
+        @media (max-width: 1440px) {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 1000px) {
+            font-size: 21px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 25px;
+        color: #000000;
+        @media (max-width: 1400px) {
+            font-size: 21px;
+        }
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+    }
+}

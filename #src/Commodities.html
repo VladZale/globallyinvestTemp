@@ -1,0 +1,65 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="commodities page">
+        <div class="page__bg"></div>
+
+        <div class="commodities__container container">
+            <div class="commodities__inner page__inner">
+                <div class="commodities__left page__left">
+                    @@include('components/PagesBg/forCommodities.html')
+                </div>
+                <div class="commodities__right">
+                    <h2 class="commodities__title page__title" id="commodities" data-page-commodities></h2>
+                    <div class="commodities__content page__content">
+                        <div class="commodities__item page__item">
+                            <p class="commodities__desc page__desc" data-commodities-descHead1></p>
+                            <p class="commodities__desc page__desc" data-commodities-descHead2></p>
+                            <p class="commodities__desc page__desc" data-commodities-descHead3></p>
+                            <p class="commodities__desc page__desc" data-commodities-descHead4></p>
+                            <ul class="commodities__list page__list">
+                                <h5 class="commodities__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-comodities-list1></li>
+                                    <li data-comodities-list2></li>
+                                    <li data-comodities-list3></li>
+                                    <li data-comodities-list4></li>
+                                    <li data-comodities-list5></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="commodities__item page__item">
+                            <h3 class="commodities__item-title page__item-title" data-commodities-types></h3>
+                            <p class="commodities__desc page__desc" data-commodities-typesText1></p>
+                            <p class="commodities__desc page__desc" data-commodities-typesText2></p>
+                            <p class="commodities__desc page__desc" data-commodities-typesText3></p>
+                            <p class="commodities__desc page__desc" data-commodities-typesText4></p>
+                            <p class="commodities__desc page__desc" data-commodities-typesText5></p>
+                        </div>
+                        <div class="commodities__item page__item">
+                            <h3 class="commodities__item-title page__item-title" data-commodities-stock></h3>
+                            <p class="commodities__desc page__desc" data-commodities-textStock1></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="commodities-majors">
+            <h2 class="table__title" data-commodities-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+$genMargin: 20px;
+
+.markets-planet {
+  padding: 100px 0px;
+  overflow: hidden;
+  background-color: #000;
+  @media (max-width: 1000px) {
+    padding: 25px 0px;
+  }
+
+  &__btns {
+    @media (max-width: 500px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    color: $fontsColor;
+    margin-top: $genMargin;
+  }
+
+  &__info {
+    width: 50%;
+    position: relative;
+    z-index: 100;
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-bottom: $genMargin;
+    }
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__btn-more {
+    margin-left: $genMargin;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-top: $genMargin;
+    &:last-child{
+      margin-right: 0px;
+    }
+    @media (max-width: 500px) {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      background-color: $accent;
+      z-index: -1;
+      transition: all ease-in-out .3s;
+      @media (max-width: 500px) {
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__crypto {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background: radial-gradient(520px, rgba(97, 241, 91, 0.4), transparent 50%);
+    margin-top: -50px;
+    @media (max-width: 1000px) {
+      margin-top: 10px;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(360px, rgba(97, 241, 91, 0.4), transparent 50%);
+    }
+    @media (max-width: 1000px) {
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(230px, rgba(97, 241, 91, 0.4), transparent 50%);
+    }
+  }
+
+  &__planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    & canvas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__crypto-items {
+    height: 100%;
+    //animation: rotation 60s linear infinite;
+  }
+
+  &__markets-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__markets {
+    margin-top: $genMargin;
+  }
+
+  &__markets-images {
+    margin-top: $genMargin;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    @media (max-width: 500px) {
+      justify-content: center;
+    }
+
+    & img {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: $genMargin;
+      @media (max-width: 1000px) {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      @media (max-width: 500px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}

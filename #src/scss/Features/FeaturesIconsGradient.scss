@@ -1,0 +1,118 @@
+.features-icons-gradient {
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 730px;
+        object-fit: contain;
+        background-image: url("../img/iconsGradient/planet.png");
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    &__head {
+        max-width: 1250px;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width: 1000px) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 120%;
+        text-align: center;
+        color: #0F1B47;
+        margin-bottom: 30px;
+        @media (max-width: 1000px) {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+        color: #545454;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        padding-top: 90px;
+        gap: 110px 250px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        align-items: baseline;
+        place-content: center;
+        @media (max-width: 1440px) {
+            gap: 60px 125px;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(3,auto);
+        }
+        @media (max-width: 500px) {
+            gap: 30px 25px;
+            padding-top: 30px;
+            grid-template-columns: repeat(1,auto); // OR
+            grid-template-rows: repeat(4,auto); // OR
+        }
+    }
+
+    &__item {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        max-width: 275px;
+        gap: 5px;
+    }
+
+    &__icon img{
+        height: 136px;
+        width: 136px;
+        @media (max-width: 1000px) {
+            height: 100px;
+            width: 100px;
+        }
+        @media (max-width: 500px) {
+            height: 55px;
+            width: 55px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 110%;
+        color: #000000;
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+
+    &__item-text{
+        font-size: 18px;
+        line-height: 110%;
+        color: #000000;
+        opacity: 0.6;
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+}

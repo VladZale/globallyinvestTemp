@@ -1,0 +1,140 @@
+.chat {
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    max-height: calc(100vh - 60px);
+
+    &-box.open {
+        position: relative;
+        min-width: 450px;
+        min-height: 450px;
+        border-radius: 10px;
+        background-color: red;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        overflow: hidden;
+        color: #fff;
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s ease-in-out;
+    }
+
+    &-box {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-head,
+    &-content {
+        padding: 5%;
+    }
+
+    &-head {
+        background-color: $accent;
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+    }
+
+    &-close{
+        cursor: pointer;
+    }
+
+    &-content {
+        background-color: #efefef;
+        display: grid;
+        grid-template-rows: max-content;
+        gap: 30px;
+    }
+
+    &-message {
+        gap: 15px;
+        display: grid;
+    }
+
+    &-message.manager {
+        grid-template-columns: max-content 1fr;
+    }
+
+    &-message.person {
+        grid-template-columns: 1fr max-content;
+    }
+
+    &-message.person &-message-icon {
+        grid-area: 1/2;
+    }
+
+    &-message-content {
+        padding: 5%;
+        background-color: #65d0ea;
+        color: #000;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    &-message-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accentHeader;
+
+        & span {
+            font-size: 28px;
+        }
+    }
+
+    &-message-footer {
+        height: 150px;
+        background-color: #333a42;
+    }
+
+    &-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #00a4ff;
+        position: relative;
+        left: 100%;
+        transform: translateX(-100%);
+        margin-top: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & span {
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+
+    &-message-footer {
+        display: grid;
+        grid-template-rows: 1fr max-content;
+    }
+
+    &-message-text{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &-message-text,
+    &-message-send {
+        padding: 5%;
+    }
+
+    &-message-send{
+        cursor: pointer;
+        text-align: center;
+    }
+}

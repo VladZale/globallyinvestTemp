@@ -1,0 +1,38 @@
+.quadrangle-list {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+
+}
+.quadrangle__border,
+.quadrangle__border-line,
+.quadrangle__inner {
+  clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+}
+
+.quadrangle {
+  filter: drop-shadow(0px 0px 5px rgba(66, 66, 66, 0.7));
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  height: 90px;
+}
+
+.quadrangle__border {
+  position: absolute;
+  width: 98%;
+  height: 104%;
+  background: #4a4a4a;
+  left: 1%;
+  top: -2%;
+}
+
+.quadrangle__inner {
+  background: #242424;
+  padding: 0.5rem 0.2rem 0rem;
+  width: 92%;
+  margin-top: 4.8%;
+  margin-left: 4%;
+  height: 90px;
+}
+

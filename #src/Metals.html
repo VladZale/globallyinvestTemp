@@ -1,0 +1,67 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="metals page">
+        <div class="page__bg"></div>
+
+        <div class="metals__container container">
+            <div class="metals__inner page__inner">
+                <div class="metals__left page__left">
+                    @@include('components/PagesBg/forMetals.html')
+                </div>
+                <div class="metals__right">
+                    <h2 class="metals__title page__title" data-page-metals></h2>
+                    <div class="metals__content page__content">
+                        <div class="metals__item page__item">
+                            <p class="metals__desc page__desc" data-metals-descHead></p>
+                            <ul class="stocks__list page__list">
+                                <h5 class="stocks__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-metals-list1></li>
+                                    <li data-metals-list2></li>
+                                    <li data-metals-list3></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="metals__item page__item">
+                            <h3 class="metals__item-title page__item-title" data-metals-brief></h3>
+                            <p class="metals__desc page__desc" data-metals-textBrief></p>
+                        </div>
+                        <div class="metals__item page__item">
+                            <p class="metals__item-title page__item-title" data-metals-base></p>
+                            <p class="metals__desc page__desc" data-metals-textBase1></p>
+                            <p class="metals__desc page__desc" data-metals-textBase2></p>
+                            <p class="metals__desc page__desc" data-metals-textBase3></p>
+                            <p class="metals__desc page__desc" data-metals-textBase4></p>
+                        </div>
+                        <div class="metals__item page__item">
+                            <h3 class="metals__item-title page__item-title" data-metals-precious></h3>
+                            <p class="metals__desc page__desc" data-metals-textPrecious1></p>
+                            <p class="metals__desc page__desc" data-metals-textPrecious2></p>
+                            <p class="metals__desc page__desc" data-metals-textPrecious3></p>
+                            <p class="metals__desc page__desc" data-metals-textPrecious4></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="metals-majors">
+            <h2 class="table__title" data-metals-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

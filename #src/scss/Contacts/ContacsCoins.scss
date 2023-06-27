@@ -1,0 +1,286 @@
+.contacts-coins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    background-color: #1B1B1B;
+    position: relative;
+    background-image: url("../img/HeroCoins/goldWave.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background: rgba(196, 196, 196, 0.45);
+        filter: blur(80px);
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 125%;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @media (max-width: 1440px) {
+            font-size: 40px;
+        }
+        @media (max-width: 1000px) {
+            font-size: 28px;
+        }
+    }
+
+    &__box img {
+        @media (max-width: 1000px) {
+            width: 200px;
+        }
+    }
+
+
+    &__text {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 124.19%;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 30px;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        place-content: start;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__links-item a {
+        font-size: 40px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 0 auto;
+        align-items: center;
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 30px;
+        }
+    }
+
+    &__icon {
+        color: $accent;
+        padding: 10px;
+        background: #454242;
+        border: 1px solid #454242;
+        border-radius: 5px;
+    }
+
+    & p {
+        margin-top: 7px;
+    }
+}
+
+.form-coins * {
+    outline: none;
+}
+
+.form-coins {
+    margin: 0 auto;
+    color: $fontsColor;
+    padding: 50px 40px;
+    background: rgba(69, 66, 66, 0.8);
+    border-radius: 5px;
+    position: relative;
+    @media (max-width: 1000px) {
+        padding: 60px 30px;
+    }
+
+    .form-coins__body {
+        position: relative;
+    }
+
+    &__item-title {
+        text-align: left;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 125%;
+        color: #333162;
+        margin-bottom: 5px;
+        @media (max-height: 1000px) {
+            font-size: 18px;
+        }
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
+    }
+
+    .form-coins__body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease 0s;
+    }
+
+    .form-coins__body._sending::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* _sending */
+
+    .form-coins__title {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+    }
+
+    .form-coins__item {
+        margin: 0px 0 40px 0;
+
+        &:last-child {
+            margin: 0px;
+        }
+    }
+
+    .form-coins__input {
+        position: relative;
+        height: 50px;
+        padding: 0 20px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        color: #000;
+        transition: all ease-in-out .3s;
+    }
+
+    .form-coins__input::placeholder{
+        color: #1B1B1B;
+    }
+
+    .form-coins__input:focus {
+        box-shadow: 15px 20px 41px 9px rgba(34, 60, 80, 0.2);
+    }
+
+
+    .form-coins__input._error {
+        box-shadow: 0 0 15px red;
+    }
+
+    textarea.form-coins__input {
+        min-height: 120px;
+        resize: vertical;
+        padding: 20px;
+    }
+
+    .checkbox._error .checkbox__label::before {
+        box-shadow: 0 0 15px red;
+    }
+
+    .checkbox__input {
+        display: none;
+    }
+
+    .checkbox__input:checked + .checkbox__label::after {
+        transform: scale(1);
+    }
+
+    .checkbox__label {
+        width: 100%;
+        font-size: 16px;
+        line-height: 140%;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        color: $fontsColor;
+        white-space: nowrap;
+
+        @media (max-width: 500px) {
+            font-size: 10px;
+        }
+    }
+
+    .checkbox__label::before {
+        content: "";
+        align-self: flex-start;
+        flex: 0 0 24px;
+        height: 24px;
+        background: #FFFFFF;
+        border: 3px solid $accent;
+        box-sizing: border-box;
+        border-radius: 2px;
+        margin: 0 10px 0 0;
+        @media (max-width: 1000px) {
+            margin: 0px 5px 0px 0px;
+        }
+    }
+
+    .checkbox__label::after {
+        transition: transform 0.5s ease 0s;
+        content: "";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: $accent;
+        border-radius: 2px;
+        transform: scale(0);
+    }
+
+    .checkbox__label a {
+        color: $accent;
+        text-decoration: underline;
+    }
+
+    .form-coins__button {
+        padding: 20px 35px;
+        width: 100%;
+        position: relative;
+        background: $accent;
+        box-shadow: 0 56px 50px -11px rgba(111, 106, 209, 0.3);
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+        opacity: .6;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 125%;
+        color: #FFFFFF;
+        @media (max-height: 1000px) {
+            padding: 15px 25px;
+            font-size: 21px;
+        }
+    }
+
+    .form-coins__button:active {
+        top: 3px;
+        box-shadow: 0 2px 0 #161b13;
+    }
+}
+
+.checkbox {
+    color: $fontsColor;
+}
+
+textarea {
+    font-family: "Roboto", sans-serif;
+}

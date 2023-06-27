@@ -1,0 +1,97 @@
+.hero-isometric {
+    &.motion--line::after {
+        right: 0;
+    }
+
+    &__decor {
+        position: absolute;
+        height: 100%;
+        object-fit: contain;
+        top: 0;
+        z-index: -1;
+        right: 0;
+        @media (max-width: 1330px) {
+            right: -90px;
+        }
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__container {
+        height: 100%;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        align-items: center;
+        height: 100%;
+        place-items: flex-end;
+        place-content: center;
+        @media (max-width: 1000px) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, auto);
+            text-align: center;
+            place-items: center;
+            place-content: space-around;
+        }
+    }
+
+    &__left {
+        @media (max-width: 500px) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 119.5%;
+        letter-spacing: 0.055em;
+        color: #fff;
+        margin-bottom: 30px;
+        max-width: 80%;
+
+        & span {
+            background: linear-gradient(270deg, #BA65AF 52.3%, #1BC2EE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 1000px) {
+            max-width: 100%;
+        }
+        @media (max-width: 500px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 170%;
+        color: #fff;
+        margin-bottom: 30px;
+        @media (max-width: 500px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-top: 30px;
+        background-color: #fff;
+        color: #000;
+        position: relative;
+        transition: all .3s ease-in-out;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 170%;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.widgets{
+  background: #000;
+  @media (max-width: 469px) {
+    padding: 10px 0;
+  }
+  &__box{
+    position: relative;
+    padding: 20px;
+    min-width: 200px;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      height: 80%;
+      width: 2px;
+      background: #adaaaa;
+    }
+    @media (max-width: 1200px) {
+      flex: 0 0 25%;
+    }
+    @media (max-width: 768px) {
+      flex: 0 0 50%;
+      padding: 10px;
+    }
+
+    @media (max-width: 469px) {
+      flex: 0 0 80%;
+    }
+  }
+  &__inner{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      max-width: 450px;
+    }
+  }
+
+  &__box-header{
+    padding-bottom: 10px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #adaaaa;
+    }
+  }
+
+  &__box-header{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  &__box-title{
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+
+  &__box-percent{
+    color: #adaaaa;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  &__box-percent.green{
+    color: #58e149;
+  }
+
+  &__box-percent.red{
+    color: #d33811;
+  }
+
+  &__box-value{
+    margin: 10px 0 5px;
+  }
+
+  &__box-value,
+  &__box-vol{
+    color: #adaaaa;
+    white-space: nowrap;
+  }
+
+}

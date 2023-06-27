@@ -1,0 +1,129 @@
+.slider {
+  padding: 0px;
+}
+
+
+.slider > .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider > .swiper > .swiper-wrapper > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+
+.slider > .swiper > .swiper-wrapper > .swiper-slide {
+  height: 70vh;
+}
+
+.slider > .swiper > .swiper-wrapper > .swiper-slide > .slider__box > .slider__img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+
+.slider {
+  height: 75%;
+  width: 100%;
+
+
+  &__box {
+    position: relative;
+    width: 100%;
+
+    height: 100%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      box-shadow: 0 0 70px 10px rgb(46 46 46 / 50%) inset;
+      background-color: #000;
+      opacity: .65;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 100;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 120%;
+    color: $whiteTitle;
+    padding: 20px;
+    text-align: left;
+
+    & span {
+      padding: 10px 20px;
+      line-height: 150%;
+      font-size: 45px;
+      box-shadow: 15px 19px 31px 8px rgb(34 34 34 / 70%);
+      border-radius: 5px;
+      color: $whiteTitle;
+      @media (max-width: 1000px) {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+
+  }
+
+  &__one > span {
+    background-color: rgb(124 57 71);
+  }
+
+  &__two > span {
+    background-color: #207799;
+  }
+
+  &__three > span {
+    background-color: #7d4c5f;
+  }
+
+  &__four > span {
+    background-color: rgb(97 82 60);
+  }
+
+  &__five > span {
+    background-color: #323960;
+  }
+
+
+}

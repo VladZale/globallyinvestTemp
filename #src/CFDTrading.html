@@ -1,0 +1,54 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="cfd-trading page">
+        <div class="page__bg"></div>
+
+        <div class="cfd-trading__container container">
+            <div class="cfd-trading__inner page__inner">
+                <div class="cfd-trading__left page__left">
+                    @@include('components/PagesBg/forex.html')
+                </div>
+                <div class="cfd-trading__right">
+                    <h2 class="cfd-trading__title page__title" data-menu-cfdTrading></h2>
+                    <div class="cfd-trading__content page__content">
+                        <div class="cfd-trading__item page__item">
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-descHead1></p>
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-descHead2></p>
+
+                            <ul class="cfd-trading__list page__list">
+                                <h5 class="cfg-trading__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-cfdTrading-list1></li>
+                                    <li data-cfdTrading-list2></li>
+                                    <li data-cfdTrading-list3></li>
+                                    <li data-cfdTrading-list4></li>
+                                    <li data-cfdTrading-list5></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="cfd-trading__item page__item">
+                            <h3 class="cfd-trading__item-title page__item-title" data-cfdTrading-cfds></h3>
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-cfdsDesc1></p>
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-cfdsDesc2></p>
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-cfdsDesc3></p>
+                            <p class="cfd-trading__desc page__desc" data-cfdTrading-cfdsDesc4></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

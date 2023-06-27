@@ -1,0 +1,90 @@
+.hero-glass{
+    position: relative;
+    height: 800px;
+    background: linear-gradient(104.34deg, #FEFEFC 2.71%, #69A0FB 98.81%);
+
+    &::after,
+    &::before{
+        content: '';
+        position: absolute;
+    }
+    &::after{
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        z-index: 2;
+        background-image: url("../img/Hero/isometricPerson.png");
+        background-repeat: no-repeat;
+        @media (max-width: 1000px) {
+            content: none;
+        }
+    }
+    &::before{
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url("../img/Hero/bg.png");
+        background-repeat: no-repeat;
+        opacity: .1;
+    }
+
+    &__container{
+        height: 100%;
+        position: relative;
+        z-index: 5;
+    }
+
+    &__inner{
+        height: 100%;
+        @media (max-width: 1000px) {
+            padding-top: 95px;
+        }
+    }
+
+    &-right{
+        @media (max-width: 1000px) {
+         text-align: center;
+        }
+    }
+
+    &-left img{
+        @media (min-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__title{
+        font-size: 60px;
+        background: linear-gradient(90.07deg, #FC0EFB 2.73%, #04ACF9 80.01%);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__desc{
+        font-family: 'Poppins', sans-serif;
+        color: #043AAC;
+        margin: 50px 0 70px;
+        @media (max-width: 1000px) {
+            margin: 25px 0 40px;
+        }
+    }
+
+    &__btn{
+        padding: 26px 50px;
+        background: $accent;
+        box-shadow: 0 1px 50px 11px rgba(24, 39, 168, 0.3);
+        border-radius: 10px;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background: $accentHeader;
+        }
+        @media (max-width: 1000px) {
+            padding: 15px 25px;
+        }
+    }
+}

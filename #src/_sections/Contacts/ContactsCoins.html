@@ -1,0 +1,40 @@
+<section class="contacts-coins" id="contacts">
+    <div class="container">
+
+        <div class="contacts-coins__inner">
+            <div class="contacts-coins__box">
+                <h2 class="contacts-coins__title title" data-contacts-title></h2>
+                <p class="contacts-coins__text" data-contacts-desc></p>
+
+            </div>
+            <div class="contacts-coins__form">
+                <form id="form" action="#" class="form-coins form-coins__body">
+
+                    <div class="form-coins__item">
+                        <input id="formName" type="text" name="name" class="form-coins__input _req" placeholder="Name">
+                    </div>
+                    <div class="form-coins__item">
+                        <input id="formEmail" type="text" name="email"
+                               class="form-coins__input _req _email" placeholder="E-mail">
+
+                    </div>
+                    <div class="form-coins__item">
+                        <textarea id="formText" type="text" name="text"
+                                  class="form-coins__input _req" placeholder="Enter description"></textarea>
+
+                    </div>
+                    <div class="form-coins__item">
+                        <div class="checkbox">
+                            <input id="formAgreement" type="checkbox" name="agreement"
+                                   class="checkbox__input _req">
+                            <label for="formAgreement" class="checkbox__label">
+                                <span data-contacts-agree></span></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-coins__button btn" data-btnsText-send></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

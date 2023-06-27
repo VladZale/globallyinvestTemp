@@ -1,0 +1,65 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="nft page">
+        <div class="page__bg"></div>
+
+        <div class="nft__container container">
+            <div class="nft__inner page__inner">
+                <div class="nft__left page__left">
+                    @@include('components/PagesBg/forNft.html')
+                </div>
+                <div class="nft__right">
+                    <h2 class="nft__title page__title" data-page-nft></h2>
+                    <div class="nft__content page__content">
+                        <div class="nft__item page__item">
+                            <p class="nft__desc page__desc" data-nft-descHead1></p>
+                            <ul class="nft__list page__list">
+                                <h5 class="nft__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content" >
+                                    <li data-nft-list1></li>
+                                    <li data-nft-list2></li>
+                                    <li data-nft-list3></li>
+                                    <li data-nft-list4></li>
+                                </div>
+                            </ul>
+                            <p class="nft__desc page__desc" data-nft-descHead2></p>
+                            <p class="nft__desc page__desc" data-nft-descHead3></p>
+                        </div>
+                        <div class="nft__item page__item">
+                            <h3 class="nft__item-title page__item-title" data-nft-understanding></h3>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding1></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding2></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding3></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding4></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding5></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding6></p>
+                            <p class="nft__desc page__desc" data-nft-textUnderstanding7></p>
+                        </div>
+                        <div class="nft__item page__item">
+                            <h3 class="nft__item-title page__item-title" data-nft-stock></h3>
+                            <p class="nft__desc page__desc" data-nft-textStock1></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nft-majors">
+            <h2 class="table__title" data-nft-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

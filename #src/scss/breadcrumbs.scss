@@ -1,0 +1,20 @@
+.breadcrumbs{
+    margin-bottom: 50px;
+
+    &__list{
+        display: flex;
+    }
+
+    &__list li{
+        margin-right: 10px;
+        font-size: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__list li a.active{
+        font-weight: bold;
+        color: $accent;
+    }
+}

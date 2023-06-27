@@ -1,0 +1,27 @@
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    border: none;
+    background: $accent;
+    border-radius: 0px 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 48px;
+    width: 48px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s ease-in-out, background-color .3s ease-in-out, transform .3s ease-in-out;
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $accent;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}

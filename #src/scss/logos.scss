@@ -1,0 +1,29 @@
+.logos {
+  &__container{
+    width: 100%;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__img {
+
+    opacity: .2;
+
+    object-fit: cover;
+    max-width: 120px;
+    max-height: 40px;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+    @media (max-width: 1000px) {
+      max-width: 120px;
+      max-height: 20px;
+    }
+
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0) contrast(100%);
+    }
+  }
+}

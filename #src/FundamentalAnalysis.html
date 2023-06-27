@@ -1,0 +1,61 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="fundamental-analysis page">
+        <div class="page__bg"></div>
+
+        <div class="fundamental-analysis__container container">
+            <div class="fundamental-analysis__inner page__inner">
+                <div class="fundamental-analysis__left page__left">
+                    @@include('components/PagesBg/web.html')
+                </div>
+                <div class="fundamental-analysis__right">
+                    <h2 class="fundamental-analysis__title page__title" data-menu-fundamentalAnalysis></h2>
+                    <div class="fundamental-analysis__content page__content">
+                        <div class="fundamental-analysis__item page__item">
+                            <h3 class="fundamental-analysis__item-title page__item-title" data-fundamentalAnalysis-fundamentalAnalysis></h3>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-descHead1></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-descHead2></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-descHead3></p>
+                            <ul class="fundamental-analysis__list page__list">
+                                <h5 class="fundamental-analysis__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-fundamentalAnalysis-list1></li>
+                                    <li data-fundamentalAnalysis-list2></li>
+                                    <li data-fundamentalAnalysis-list3></li>
+                                    <li data-fundamentalAnalysis-list4></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="fundamental-analysis__item page__item">
+                            <h3 class="fundamental-analysis__item-title page__item-title" data-fundamentalAnalysis-understanding></h3>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textUnderstanding1></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textUnderstanding2></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textUnderstanding3></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textUnderstanding4></p>
+                        </div>
+                        <div class="fundamental-analysis__item page__item">
+                            <h3 class="fundamental-analysis__item-title page__item-title" data-fundamentalAnalysis-analysis></h3>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textAnalysis1></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textAnalysis2></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textAnalysis3></p>
+                            <p class="fundamental-analysis__desc page__desc" data-fundamentalAnalysis-textAnalysis4></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

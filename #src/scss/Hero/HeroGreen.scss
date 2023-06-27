@@ -1,0 +1,102 @@
+.hero-green{
+  background: linear-gradient(90deg, #1E5A53 27.11%, #163133 81.64%);
+  display: grid;
+  place-items: center center;
+  position: relative;
+  overflow: hidden;
+  &__left{
+    @media (max-width: 1000px) {
+      text-align: center;
+    }
+  }
+  &__title{
+    font-size: 42px;
+    line-height: 132%;
+    letter-spacing: 0.055em;
+    color: #C3FFFB;
+    margin-bottom: 40px;
+    max-width: 85%;
+    @media (max-width: 1000px) {
+      max-width: 100%;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc{
+    color: #C3FFFB;
+    margin-bottom: 40px;
+    @media (max-width: 1000px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn{
+    color: rgba(24, 49, 51, 0.95);
+    background: linear-gradient(89.97deg, #81EED8 -13.04%, #39A388 54.56%, #81EED8 118.06%);
+    border: 1px solid rgba(195, 255, 251, 0.2);
+    transition: all .3s ease-in;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    &:hover{
+      background: linear-gradient(89.97deg, #87ffe3 -13.04%, #41c5a5 54.56%, #84ffe5 118.06%);
+    }
+  }
+  &__right img{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    @media (max-width: 1000px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+.line{
+  position: absolute;
+  background: linear-gradient(180deg, rgba(48, 126, 116, 0.145) 0%, rgba(48, 126, 116, 0) 100%);
+  border-radius: 20px;
+  transform: rotate(30deg);
+  width: 355px;
+  height: 55px;
+  z-index: -1;
+}
+
+.line-1{
+  top: 0;
+  left: 0;
+}
+
+.line-2{
+  top: 15%;
+  left: -10%;
+  display: none;
+}
+
+.line-3{
+  top: 60%;
+  left: -5%;
+  display: none;
+}
+
+.line-4{
+  top: 85%;
+  left: -10%;
+}
+
+.line-5{
+  width: 650px;
+  top: 50%;
+  left: 50%;
+}
+
+.line-6{
+  width: 420px;
+  top: 10%;
+  left: 80%;
+}

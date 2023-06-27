@@ -1,0 +1,122 @@
+.text-planet {
+  position: relative;
+  height: 600px;
+  background-color: $darkSection;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  @media (max-width: 500px) {
+    height: 400px;
+  }
+
+  &__container {
+    width: 100%;
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  &__items {
+    max-width: 1920px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5px;
+    margin: 0 auto;
+
+    z-index: 99999;
+    padding: 30px;
+    place-items: center center;
+
+    @media (max-width: 1000px) {
+      place-content: center center;
+      grid-template-columns: repeat(8, 2fr);
+      grid-gap: 10px;
+    }
+    @media (max-width: 500px) {
+      padding: 10px;
+    }
+  }
+
+  &__box {
+    position: relative;
+    z-index: 100;
+    width: 60%;
+    margin: auto 0 auto auto;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0 0 auto auto;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+    line-height: 120%;
+    color: $fontsColor;
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all ease-in-out .2s;
+    transform-origin: center center;
+    @media (max-width: 1000px) {
+      width: 50px;
+      height: 50px;
+    }
+    @media (max-width: 500px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      transform: scale(1.25);
+      @include greenShadow;
+
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &:nth-child(7) {
+      bottom: 0;
+      left: 50%;
+      background-color: #fff;
+    }
+  }
+}
+
+
+.container > canvas {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+
+}

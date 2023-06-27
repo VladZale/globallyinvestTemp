@@ -1,0 +1,62 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="forex page">
+        <div class="page__bg"></div>
+        <div class="forex__container container">
+
+            <div class="forex__inner page__inner">
+                <div class="forex__left page__left">
+                    @@include('components/PagesBg/forForex.html')
+                </div>
+                <div class="forex__right">
+                    <h2 class="forex__title page__title" data-page-forex></h2>
+                    <div class="forex__content page__content">
+                        <div class="forex__item page__item">
+                            <p class="forex__desc page__desc" data-forex-descHead></p>
+                            <ul class="stocks__list page__list">
+                                <h5 class="stocks__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-forex-list1></li>
+                                    <li data-forex-list2></li>
+                                    <li data-forex-list3></li>
+                                    <li data-forex-list4></li>
+                                    <li data-forex-list5></li>
+                                </div>
+                            </ul>
+
+                        </div>
+                        <div class="forex__item page__item">
+                            <p class="forex__item-title page__item-title" data-forex-understanding></p>
+                            <p class="forex__desc page__desc" data-forex-textUnderstanding1></p>
+                            <p class="forex__desc page__desc" data-forex-textUnderstanding2></p>
+                            <p class="forex__desc page__desc" data-forex-textUnderstanding3></p>
+                            <p class="forex__desc page__desc" data-forex-textUnderstanding4></p>
+                        </div>
+                        <div class="forex__item page__item">
+                            <p class="forex__item-title page__item-title" data-forex-stock></p>
+                            <p class="forex__desc page__desc" data-forex-textStock></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forex-majors">
+            <h2 class="table__title" data-forex-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

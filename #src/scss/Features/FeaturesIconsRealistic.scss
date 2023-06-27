@@ -1,0 +1,177 @@
+.features-icons-realistic {
+    position: relative;
+    &::after,
+    &::before{
+        content: '';
+        position: absolute;
+        opacity: 0.5;
+        filter: blur(90px);
+        width: 420px;
+        height: 250px;
+        left: -300px;
+        z-index: -1;
+        transform: translateY(-50%) rotate(90deg);
+        @media (max-width: 500px) {
+           left: 80%;
+        }
+    }
+
+    &::after{
+        top: 50%;
+        background: linear-gradient(75deg, #FFC83A 10%, #FF008A 46.53%, #7800EE 70%, #6100FF 70%);
+    }
+
+    &::before{
+        top:75%;
+        background: linear-gradient(95deg, #001AFF 10%, #6EE5C2 90%);
+    }
+
+    &__head {
+        max-width: 1250px;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width: 1000px) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 120%;
+        text-align: center;
+        color: #0F1B47;
+        margin-bottom: 30px;
+        @media (max-width: 1000px) {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+        color: #545454;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        padding-top: 90px;
+        gap: 110px 250px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        align-items: baseline;
+        place-content: center;
+        @media (max-width: 1440px) {
+            gap: 60px 125px;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
+        }
+        @media (max-width: 500px) {
+            gap: 30px 25px;
+            padding-top: 30px;
+            grid-template-columns: repeat(1, 1fr); // OR
+            grid-template-rows: repeat(4, auto); // OR
+        }
+    }
+
+    &__item {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        max-width: 275px;
+        place-items: center center;
+        @media (max-width: 500px) {
+           grid-template-columns: auto 1fr;
+            max-width: 100%;
+            text-align: left;
+            gap: 20px;
+        }
+    }
+
+    &__item-content{
+        width: 100%;
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-bottom: 10px;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        //&::after{
+        //    content: '';
+        //    position: absolute;
+        //    top: 50%;
+        //    left: 50%;
+        //    width: 100%;
+        //    height: 100%;
+        //    background: #C5E2F2;
+        //    filter: blur(60px);
+        //    transform: translate(-50%,-50%);
+        //    z-index: -1;
+        //}
+        @media (max-width: 1000px) {
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 110%;
+        color: #000000;
+        margin-bottom: 10px;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
+    }
+
+    &__item-text {
+        font-size: 18px;
+        line-height: 110%;
+        color: #000000;
+        opacity: 0.6;
+        @media (max-width: 1000px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.features-icons-realistic.shadows .features-icons-realistic__item{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+        background-color: #fff;
+        z-index: -1;
+    }
+}
+
+.features-icons-realistic.shadows .features-icons-realistic__item:nth-child(1){
+    background: radial-gradient(184.05% 184.05% at 160.29% 138.49%, rgba(8, 94, 96, 0.6) 36.27%, rgba(193, 214, 246, 0.38) 68.36%, #FFFFFF 95.26%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.5;
+    box-shadow: 11px 6px 70px 1px rgba(147, 142, 142, 0.6);
+    border-radius: 35px;
+    padding: 50px;
+}

@@ -1,0 +1,74 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="trading page">
+        <div class="page__bg"></div>
+
+        <div class="trading__container container">
+            <div class="trading__inner page__inner">
+                <div class="trading__left page__left">
+                    @@include('components/PagesBg/trading.html')
+                </div>
+                <div class="trading__right">
+                    <h2 class="trading__title page__title" data-menu-trading></h2>
+                    <div class="trading__content page__content">
+                        <div class="trading__item page__item">
+                            <p class="trading__desc page__desc" data-trading-descHead1></p>
+                            <p class="trading__desc page__desc" data-trading-descHead2></p>
+                        </div>
+                        <div class="trading__item page__item">
+                            <h3 class="trading__item-title page__item-title" data-trading-different></h3>
+                            <p class="trading__desc page__desc" data-trading-differentDesc></p>
+                            <ul class="trading__list page__list">
+                                <h5 class="trading__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li>
+                                        <strong data-trading-listTitle1></strong>
+                                        <span data-trading-list1></span>
+                                    </li>
+                                    <li>
+                                        <strong data-trading-listTitle2></strong>
+                                        <span data-trading-list2></span>
+                                    </li>
+                                    <li>
+                                        <strong data-trading-listTitle3></strong>
+                                        <span data-trading-list3></span>
+                                    </li>
+                                    <li>
+                                        <strong data-trading-listTitle4></strong>
+                                        <span data-trading-list4></span>
+                                    </li>
+                                    <li>
+                                        <strong data-trading-listTitle5></strong>
+                                        <span data-trading-list1></span>
+                                    </li>
+                                </div>
+                            </ul>
+
+                            <p class="trading__desc page__desc" data-trading-descHead3></p>
+                        </div>
+                        <div class="trading__item page__item">
+                            <h3 class="trading__item-title page__item-title" data-trading-technical></h3>
+                            <p class="trading__desc page__desc" data-trading-technicalDesc1></p>
+                            <p class="trading__desc page__desc" data-trading-technicalDesc2></p>
+                            <p class="trading__desc page__desc" data-trading-technicalDesc3></p>
+                            <p class="trading__desc page__desc" data-trading-technicalDesc4></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

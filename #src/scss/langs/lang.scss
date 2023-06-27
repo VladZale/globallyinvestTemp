@@ -1,0 +1,78 @@
+.langs{
+    position: relative;
+    right: 50px;
+    z-index: 15;
+    border-radius: 20px;
+    text-align: center;
+    background: 0 0;
+    border: 1px solid #cecece;
+    color: #787474;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    &__item{
+        padding: 20px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: $accentHeader;
+        }
+    }
+    @media (max-width: 500px) {
+        right: 0;
+    }
+
+    &__menu{
+        position: relative;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 10px 35px 10px 20px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 25px;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            height: 10px;
+            transform-origin: 30% 10%;
+            background-image: url('../img/arrowDown.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            font-weight: bold;
+        }
+    }
+
+    &__menu.active .menu__multi{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__multi-inner{
+        margin-top: 30px;
+        background: $accent;
+        border-radius: 5px;
+        position: relative;
+        width: 65px;
+        left: -10px;
+        overflow: hidden;
+    }
+}
+
+.langs.pixel{
+    background: 0 0;
+    border: 1px solid #622BFF;
+    color: #622BFF;
+    border-radius: 0;
+
+    .langs__multi-inner{
+        border-radius: 0;
+    }
+
+    .langs__item{
+        padding: 10px 20px;
+    }
+
+    .header__link{
+        padding: 5px 35px 5px 20px;
+    }
+}

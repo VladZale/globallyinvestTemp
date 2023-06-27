@@ -1,0 +1,179 @@
+.markets-isometric-pink {
+    height: 100%;
+    background: #fff;
+    position: relative;
+    display: grid;
+    align-items: center;
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        border-style: solid;
+    }
+
+    &::after{
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-width: 900px 0 0 750px;
+        border-color: transparent transparent transparent #D1BBD3;
+        @media (max-width: 1400px) {
+            border-width: 600px 0 0 450px;
+        }
+        @media (max-width: 1000px) {
+            border-width: 100px 0 0 450px;
+        }
+    }
+
+    &::before{
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-width: 0 500px 250px 0;
+        border-color: transparent #D1BBD3 transparent transparent;
+        @media (max-width: 1400px) {
+            border-width: 0 300px 125px 0;
+        }
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        position: relative;
+        z-index: 2;
+        gap: 110px;
+        font-family: 'Open Sans', sans-serif;
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,auto);
+            gap: 50px;
+        }
+    }
+
+    &__right{
+        @media (max-width: 1000px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__left{
+        text-align: center;
+        @media (max-width: 1000px) {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & img{
+                width: 500px;
+                @media (max-width: 500px) {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    &__list{
+        @media (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7,1fr);
+            gap: 10px;
+        }
+    }
+
+    &__left-title{
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 120%;
+        color: #000000;
+        margin-bottom: 70px;
+        position: relative;
+        display: inline-block;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            width: 66px;
+            height: 58px;
+            background-color: #D1BBD3;
+            border-radius: 50px;
+            z-index: -1;
+        }
+        @media (max-width: 1400px) {
+            font-size: 40px;
+        }
+    }
+
+    &__list{
+        display: grid;
+        gap: 30px;
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap:22px;
+        & span{
+            width: 98px;
+            height: 93px;
+            position: relative;
+            @media (max-width: 1400px) {
+                width: 68px;
+                height: 63px;
+            }
+        }
+
+        & span span{
+            width: 68px;
+            height: 58px;
+            background-color: #D1BBD3;
+            border-radius: 50px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            @media (max-width: 1400px) {
+                width: 48px;
+                height: 38px;
+            }
+        }
+
+        & span img{
+            position: relative;
+            bottom: -20px;
+            @media (max-width: 1400px) {
+                width: 50px;
+            }
+        }
+    }
+
+    &__item-title{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: #50105A;
+        @media (max-width: 1400px) {
+            font-size: 24px;
+        }
+    }
+
+    &__item-desc{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 173%;
+        color: #000000;
+        opacity: 0.8;
+        @media (max-width: 1400px) {
+            font-size: 18px;
+        }
+    }
+}

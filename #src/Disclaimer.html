@@ -1,0 +1,58 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="Disclaimer page">
+        <div class="page__bg"></div>
+
+        <div class="Disclaimer__container container">
+            <div class="Disclaimer__inner page__inner">
+                <div class="Disclaimer__left page__left">
+                    @@include('components/PagesBg/forDisclaimer.html')
+                </div>
+                <div class="Disclaimer__right">
+                    <h2 class="Disclaimer__title page__title" data-menu-disclaimer></h2>
+                    <div class="Disclaimer__content page__content">
+                        <div class="Disclaimer__item page__item">
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-descHead></p>
+                        </div>
+                        <div class="Disclaimer__item page__item">
+                            <h3 class="Disclaimer__item-title page__item-title" data-disclaimer-disclosure></h3>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textDisclosure></p>
+                        </div>
+                        <div class="Disclaimer__item page__item">
+                            <h3 class="Disclaimer__item-title page__item-title" data-disclaimer-currency></h3>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textCurrency></p>
+                        </div>
+                        <div class="Disclaimer__item page__item">
+                            <h3 class="Disclaimer__item-title page__item-title" data-disclaimer-event></h3>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textEvent></p>
+                        </div>
+                        <div class="Disclaimer__item page__item">
+                            <h3 class="Disclaimer__item-title page__item-title" data-disclaimer-operational></h3>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textOperational></p>
+                        </div>
+                        <div class="Disclaimer__item page__item">
+                            <h3 class="Disclaimer__item-title page__item-title" data-disclaimer-margin></h3>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textMargin1></p>
+                            <p class="Disclaimer__desc page__desc" data-disclaimer-textMargin2></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>
+
+

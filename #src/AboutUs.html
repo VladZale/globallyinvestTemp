@@ -1,0 +1,37 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="about-us page">
+        <div class="page__bg"></div>
+
+        <div class="about-us__container container">
+            <div class="about-us__inner page__inner">
+                <div class="about-us__left page__left">
+                    @@include('components/PagesBg/planet.html')
+                </div>
+                <div class="about-us__right">
+                    <h2 class="about-us__title page__title" data-menu-aboutUs></h2>
+                    <div class="about-us__content page__content">
+                        <div class="about-us__item page__item">
+                            <p class="about-us__desc page__desc" data-about-descHead1 data-textInfo></p>
+                            <p class="about-us__desc page__desc" data-about-descHead2 data-textInfo></p>
+                            <p class="about-us__desc page__desc" data-about-descHead3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

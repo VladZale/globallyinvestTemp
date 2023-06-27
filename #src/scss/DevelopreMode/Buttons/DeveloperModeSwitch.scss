@@ -1,0 +1,48 @@
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+    &__slider {
+        box-shadow: rgb(30 31 40) 0px 0px 10px, rgb(52 40 40) 2px 2px 21px 0px inset;
+        background-color: #333;
+        position: absolute;
+        cursor: pointer;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: background-color .3s ease-in-out;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: rgb(76 84 70);
+            box-shadow: rgb(82 245 42) 0px 2px 14px 0px inset;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &.on &__slider{
+        box-shadow: rgb(0 0 0) 0px 0px 10px, rgb(84 133 90) 2px 2px 21px 0px inset;
+        background-color: #37ff37;
+
+    }
+
+    &.on &__slider::after{
+        transform: translateX(26px);
+        background-color: #5ab516;
+        box-shadow: rgb(201 255 188) 0px 2px 14px 0px inset;
+    }
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}

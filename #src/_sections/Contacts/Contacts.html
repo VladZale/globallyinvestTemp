@@ -1,0 +1,43 @@
+<section class="contacts" id="contacts">
+    <div class="container">
+
+        <div class="contacts__inner">
+            <div class="contacts__box">
+                <h2 class="contacts__title title" data-contacts-title></h2>
+                <img src="img/contacts/1-bg.png" alt="" >
+                <p class="contacts__text" data-contacts-desc></p>
+
+            </div>
+            <div class="contacts__form">
+                <form id="form" action="#" class="form form__body">
+
+                    <div class="form__item">
+                        <h4 class="form__item-title" data-contacts-label1></h4>
+                        <input id="formName" type="text" name="name" class="form__input _req">
+                    </div>
+                    <div class="form__item">
+                        <h4 class="form__item-title" data-contacts-label2></h4>
+                        <input id="formEmail" type="text" name="email"
+                               class="form__input _req _email">
+
+                    </div>
+                    <div class="form__item">
+                        <h4 class="form__item-title" data-contacts-label3></h4>
+                        <textarea id="formText" type="text" name="text"
+                                  class="form__input _req"></textarea>
+
+                    </div>
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input id="formAgreement" type="checkbox" name="agreement"
+                                   class="checkbox__input _req">
+                            <label for="formAgreement" class="checkbox__label ">
+                                <span data-contacts-agree></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="form__button btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

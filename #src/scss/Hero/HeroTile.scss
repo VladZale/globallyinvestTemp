@@ -1,0 +1,140 @@
+.tile {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  background: #000000;
+
+  &__title {
+    font-size: 15vw;
+    color: #333;
+    margin-left: -12px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    font-size: 3vw;
+    font-weight: bold;
+    color: #333;
+  }
+
+  &__left {
+    background: #FFDC00;
+    padding: 5%;
+    display: grid;
+    place-items: center;
+  }
+
+  &__right {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content-box {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #727272;
+    & p{
+      margin-bottom: 10px;
+    }
+    & p:last-child{
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.flippers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:active .flipper, .flip-container.active .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front img, .back img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flippers {
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .tile {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+
+    &__title {
+      font-size: 20vw;
+      margin-left: -11px;
+    }
+    &__desc {
+      font-size: 6vw;
+      font-weight: bold;
+      color: #333;
+    }
+    &__content-box {
+      font-size: 18px;
+    }
+    &__left {
+      text-align: center;
+    }
+  }
+  .flippers {
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+@media (max-width: 500px) {
+  .tile {
+    &__title {
+      font-size: 20vw;
+    }
+    &__content-box {
+      font-size: 16px;
+    }
+  }
+
+}

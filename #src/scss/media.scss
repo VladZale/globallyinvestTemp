@@ -1,0 +1,214 @@
+.media {
+  background-color: #f7f7f7;
+  &__title {
+    text-align: center;
+  }
+
+  &-section__message {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgb(50 50 71 / 6%), 0 0 4px rgb(50 50 71 / 8%);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 480px;
+    opacity: .5;
+    padding: 22px;
+    transition: opacity .4s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: grab;
+    @media (max-width: 1100px) {
+      opacity: 1;
+      font-size: 18px;
+    }
+    @media (min-width: 1232px) {
+      padding: 1rem;
+    }
+    @media (min-width: 1000px) {
+      height: 15.813rem;
+      padding: 1rem;
+    }
+    @media (min-width: 768px) {
+      max-width: 394px;
+      height: 320px;
+    }
+    @media (min-width: 480px) {
+      height: 264px;
+    }
+    @media (min-width: 350px) {
+      height: 300px;
+    }
+  }
+  &-section__message-text{
+    font-size: 0.875rem;
+    padding: 26px;
+    position: relative;
+    text-align: center;
+    white-space: normal!important;
+    @media (min-width: 768px){
+      padding: 16px 35px;
+    }
+  }
+}
+
+.media-section__message-logo {
+  background-position: 50%;
+  background-size: cover;
+}
+
+.media-section__message-logo_bitcoin-exchange-guide {
+  background-image: url(../img/media/bitcoin_exchange_guide.png);
+  min-height: 40px;
+  min-width: 145px;
+}
+
+.media-section__message-logo_business-insider {
+  background-image: url(../img/media/business_insider.png);
+  min-height: 50px;
+  min-width: 120px;
+}
+
+.media-section__message-logo_amb-crypto {
+  background-image: url(../img/media/amb_crypto.png);
+  min-height: 45px;
+  min-width: 92px;
+}
+
+.media-section__message-logo_market-watch {
+  background-image: url(../img/media/market_watch.png);
+  min-height: 28px;
+  min-width: 120px;
+}
+
+.media-section__message-logo_yahoo-finance {
+  background-image: url(../img/media/yahoo_finance.png);
+  min-height: 40px;
+  min-width: 115px;
+}
+
+.media-section__message-logo_ethereumworldnews {
+  background-image: url(../img/media/ethereumworldnews.png);
+  min-height: 40px;
+  min-width: 200px;
+}
+
+.media-section__message-logo_coin-codex {
+  background-image: url(../img/media/coin_codex.png);
+  min-height: 35px;
+  min-width: 140px;
+}
+
+.media-section__message-quote {
+  color: #48a6eb;
+  font-size: 6.25rem;
+  line-height: 0;
+  position: absolute;
+}
+
+
+.media-section__message-quote_top {
+  left: 0;
+  top: 2rem;
+}
+
+.media-section__message-quote_bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide{
+  transition: height .3s ease-in;
+}
+
+.swiper-slide.swiper-slide-next .media-section__message{
+  opacity: 1;
+  height: 17.875rem;
+}
+.swiper-slide.swiper-slide-next .media-section__message-text{
+  color: #000;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: $accent;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 1029px) {
+  .swiper-slide{
+    width: 50%;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .swiper-slide.swiper-slide-next .media-section__message{
+    height: auto;
+  }
+
+  .swiper-slide.swiper-slide-active .media-section__message{
+    opacity: 1;
+  }
+}
+
+
+.swiper-pagination-bullet{
+  background: none;
+  border: 3px solid $accent;
+  box-shadow: none;
+  cursor: pointer;
+  height: 1rem;
+  outline: none;
+  position: relative;
+  width: 1rem;
+}
+
+.mediaSlider{
+  height: 400px;
+}
+
+@media (max-width: 370px) {
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0px;
+  }
+}

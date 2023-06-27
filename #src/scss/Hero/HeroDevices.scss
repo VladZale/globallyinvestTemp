@@ -1,0 +1,101 @@
+.hero-devices {
+    height: 100%;
+    background: radial-gradient(46.67% 59.46% at 58.2% 45.92%, #773089 0%, #7A267D 8.85%, #712576 17.71%, #4C194F 44.67%, #1A081B 81.25%, #000000 100%);
+    display: flex;
+    align-items: center;
+    @media (max-width: 1000px) {
+        background: radial-gradient(44.67% 26.46% at 67.2% 48.92%, #773089 0, #7a267d 8.85%, #712576 17.71%, #4c194f 44.67%, #1a081b 81.25%, #000 100%);
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 140px;
+        place-items: center;
+        position: relative;
+        @media (max-width: 1000px) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            padding-top: 60px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 380px;
+            height: 340px;
+            border-radius: 50%;
+            background: radial-gradient(52.75% 52.75% at 50.21% 50%, #82C0CE 0%, rgba(71, 91, 146, 0.73) 100%);
+            filter: blur(150px);
+            z-index: -1;
+            @media (max-width: 1000px) {
+                width: 250px;
+                height: 280px;
+                filter: blur(85px);
+            }
+        }
+    }
+
+    &__right {
+        @media (max-width: 1000px) {
+            text-align: center;
+        }
+    }
+
+    &__left {
+        width: 670px;
+        @media (max-width: 1350px) {
+            width: 500px;
+        }
+        @media (max-width: 1000px) {
+            width: auto;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        display: inline-flex;
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: 0.055em;
+        color: $white;
+        margin-bottom: 37px;
+        @media (max-width: 1200px) {
+            font-size: 30px;
+        }
+        @media (max-width: 500px) {
+            font-size: 21px;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 170%;
+        margin-bottom: 35px;
+        color: $white;
+        @media (max-width: 1200px) {
+            font-size: 16px;
+        }
+        @media (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+
+    &__title,
+    &__desc {
+        @media (max-width: 1000px) {
+            margin-bottom: 20px;
+        }
+    }
+
+}

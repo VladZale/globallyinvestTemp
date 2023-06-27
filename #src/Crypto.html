@@ -1,0 +1,61 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="crypto page">
+        <div class="page__bg"></div>
+
+        <div class="crypto__container container">
+            <div class="crypto__inner page__inner">
+                <div class="crypto__left page__left">
+                    @@include('components/PagesBg/crypto.html')
+                </div>
+                <div class="crypto__right">
+                    <h2 class="crypto__title page__title" data-page-crypto></h2>
+                    <div class="crypto__content page__content">
+                        <div class="crypto__item page__item">
+                            <p class="crypto__desc page__desc" data-crypto-descHead></p>
+                            <ul class="crypto__list page__list">
+                                <h5 class="crypto__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-crypto-list1></li>
+                                    <li data-crypto-list2></li>
+                                    <li data-crypto-list3></li>
+                                    <li data-crypto-list4></li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="crypto__item page__item">
+                            <h3 class="crypto__item-title page__item-title" data-crypto-understanding></h3>
+                            <p class="crypto__desc page__desc" data-crypto-textUnderstanding1></p>
+                            <p class="crypto__desc page__desc" data-crypto-textUnderstanding2></p>
+                        </div>
+                        <div class="crypto__item page__item">
+                            <h3 class="crypto__item-title page__item-title" data-crypto-blockchain></h3>
+                            <p class="crypto__desc page__desc" data-crypto-Textblockchain1></p>
+                            <p class="crypto__desc page__desc" data-crypto-Textblockchain2></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="crypto-majors">
+            <h2 class="table__title" data-crypto-table></h2>
+            @@include('components/Table.html')
+        </div>
+
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

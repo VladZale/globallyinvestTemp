@@ -1,0 +1,252 @@
+.data-gradient {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 65px;
+    padding: 5%;
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, auto);
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin-bottom: 70px;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__box {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        padding: 30px 46px;
+        position: relative;
+        z-index: 3;
+        background: rgba(255, 255, 255, 0.12);
+        text-align: center;
+        background: #191c29;
+        //width: var(--card-width);
+        //height: var(--card-height);
+        border-radius: 6px;
+        font-size: 1.5em;
+        color: rgb(88 199 250 / 0%);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E5E5E5;
+        color: transparent;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: #fff;
+    }
+}
+
+.yellow__content,
+.purple__content,
+.green__content,
+.aqua__content {
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        animation: spin 2.5s linear infinite;
+        z-index: 2;
+    }
+
+    &::before {
+        width: 80%;
+        height: 110%;
+        border-radius: 8px;
+    }
+
+    &::after {
+        top: 45%;
+    }
+}
+
+.yellow__content {
+    &::before {
+        background-image: linear-gradient(
+                        var(--rotate), #E3FF00, #ecc425 43%, #cfff40);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        content: "";
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale(0.8);
+        filter: blur(calc(var(--card-height) / 6));
+        background-image: linear-gradient(
+                        var(--rotate), #E3FF00, #ecc425 43%, #cfff40);
+        opacity: 1;
+        transition: opacity .5s;
+    }
+}
+
+.purple__content {
+    &::before {
+        background-image: linear-gradient(
+                        var(--rotate), #EB2CFF, #b039be 43%, #8808bb);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        content: "";
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale(0.8);
+        filter: blur(calc(var(--card-height) / 6));
+        background-image: linear-gradient(
+                        var(--rotate), #EB2CFF, #b039be 43%, #8808bb);
+        opacity: 1;
+        transition: opacity .5s;
+    }
+}
+
+.green__content {
+    &::before {
+        background-image: linear-gradient(
+                        var(--rotate), #53FF24, #73f350 43%, #2ebb07);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale(0.8);
+        filter: blur(calc(var(--card-height) / 6));
+        background-image: linear-gradient(
+                        var(--rotate), #53FF24, #73f350 43%, #2ebb07);
+        opacity: 1;
+        transition: opacity .5s;
+    }
+}
+
+.aqua__content {
+    &::before {
+        background-image: linear-gradient(
+                        var(--rotate), #5ddcff, #40DEFF 43%, #0aa2c2);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        content: "";
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        transform: scale(0.8);
+        filter: blur(calc(var(--card-height) / 6));
+        background-image: linear-gradient(
+                        var(--rotate), #5ddcff, #40DEFF 43%, #0aa2c2);
+        opacity: 1;
+        transition: opacity .5s;
+    }
+}
+
+.yellow {
+    color: #E3FF00;
+}
+
+.purple {
+    color: #EB2CFF;
+}
+
+.green-data {
+    color: #53FF24;
+}
+
+.aqua {
+    color: #40DEFF;
+}
+
+
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.data-gradient.static {
+    background-image: url("../img/crypto-used.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .8;
+    }
+}
+
+.data-gradient.static .data-gradient__box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+}
+
+.data-gradient.static .data-gradient__content {
+    overflow: hidden;
+
+    &::before {
+        content: none;
+    }
+
+    &::after {
+        top: -50%;
+        border-radius: 100%;
+        filter: none;
+        width: 250px;
+        height: 100%;
+    }
+}

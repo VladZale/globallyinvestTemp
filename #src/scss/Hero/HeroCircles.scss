@@ -1,0 +1,109 @@
+.decor-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero-circles {
+    background-color: #F3F4EF;
+    @media (max-width: 500px) {
+        padding-top: 90px;
+    }
+
+    &__right {
+        height: 470px;
+        position: relative;
+        @media (max-width: 1000px) {
+            height: 300px;
+        }
+        @media (max-width: 500px) {
+            height: 250px;
+        }
+    }
+
+    &__right img {
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        object-fit: cover;
+    }
+
+    &__right img:first-child,
+    &__right img:last-child {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 8px solid rgba(196, 196, 196, 0.5);
+        @media (max-width: 1000px) {
+            width: 150px;
+            height: 150px;
+            border: 4px solid rgba(196, 196, 196, 0.5);
+        }
+        @media (max-width: 500px) {
+            border: 2px solid rgba(196, 196, 196, 0.5);
+            width: 110px;
+            height: 110px;
+        }
+    }
+
+    &__right img:first-child {
+        top: 0;
+        left: 0;
+        @media (max-width: 1000px) {
+            top: 0;
+            left: 0;
+        }
+        @media (max-width: 500px) {
+            top: -90px;
+            left: 230px;
+        }
+    }
+
+    &__right img:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        border: 15px solid rgba(196, 196, 196, 0.5);
+        @media (max-width: 1000px) {
+            border: 10px solid rgba(196, 196, 196, 0.5);
+            width: 250px;
+            height: 250px;
+        }
+        @media (max-width: 500px) {
+            border: 5px solid rgba(196, 196, 196, 0.5);
+            left: 200px;
+            top: 105px;
+        }
+    }
+
+    &__right img:last-child {
+        bottom: 0;
+        right: 0;
+
+        @media (max-width: 500px) {
+            bottom: 50px;
+            left: 0;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 15px 30px;
+        transition: all .3s ease-in-out;
+        @media (max-width: 500px) {
+            padding: 10px 20px;
+        }
+
+        &:hover {
+            background-color: #333a42;
+        }
+    }
+}

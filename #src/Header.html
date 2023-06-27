@@ -1,0 +1,158 @@
+<header class="header" id="header">
+    <div class="header__container">
+        <div class="header__inner">
+            @@include('components/Logo.html')
+            <div class="header__menu menu">
+                <div class="menu__inner">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="/" class="menu__link header__link" id="home" data-menu-home></a>
+                            </li>
+                            <ul class="menu__item multi__menu header__link" data-menu="multiMenu" id="assets">
+                                <span data-menu-assets>Assets</span>
+                                <div class="menu__multi" data-list="multiList">
+                                    <div class="menu__multi-inner">
+                                        <li class="menu__submenu">
+                                            <a href="Forex.html" class="multi__link" id="forex" data-menu-forex></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Stocks.html" class="multi__link" id="stocks" data-menu-stocks></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Crypto.html" class="multi__link" id="crypto" data-menu-crypto></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Metals.html" class="multi__link" id="metals" data-menu-metals></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Indices.html" class="multi__link" id="indices"
+                                               data-menu-indices></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Commodities.html" class="multi__link" id="commodities"
+                                               data-menu-commodities></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="NFT.html" class="multi__link" id="nft" data-menu-nft></a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="menu__item multi__menu header__link " data-menu="multiMenu" id="trading">
+                                <span data-menu-trading></span>
+                                <div class="menu__multi" data-list="multiList">
+                                    <div class="menu__multi-inner">
+                                        <div class="div__multi-inner">
+                                            <li class="menu__submenu">
+                                                <a href="OurPlatform.html" class="multi__link" id="ourplatform"
+                                                   data-menu-ourPlatform></a>
+                                            </li>
+                                            <li class="menu__submenu">
+                                                <a href="AccountTypes.html" class="multi__link" id="accounttypes"
+                                                   data-menu-accountTypes></a>
+                                            </li>
+                                            <li class="menu__submenu">
+                                                <a href="#faq" class="multi__link " id="faqScroll" data-goto="faq"
+                                                   data-menu-faq></a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="menu__item multi__menu header__link" data-menu="multiMenu" id="education">
+                                <span data-menu-education></span>
+                                <div class="menu__multi" data-list="multiList">
+                                    <div class="menu__multi-inner">
+                                        <li class="menu__submenu">
+                                            <a href="Trading.html" class="multi__link" id="tradings"
+                                               data-menu-trading></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="CFDTrading.html" class="multi__link" id="cfdtrading"
+                                               data-menu-cfdTrading></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="TechnicalAnalysis.html" class="multi__link" id="technicalanalysis"
+                                               data-menu-technicalAnalysis></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="FundamentalAnalysis.html" class="multi__link"
+                                               id="fundamentalanalysis"
+                                               data-menu-fundamentalAnalysis></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="RiskManagement.html" class="multi__link" id="riskmanagement"
+                                               data-menu-riskManagement></a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="menu__item multi__menu header__link" data-menu="multiMenu" id="legal">
+                                <span data-menu-legal></span>
+                                <div class="menu__multi" data-list="multiList">
+                                    <div class="menu__multi-inner">
+                                        <li class="menu__submenu">
+                                            <a href="Privacy.html" class="multi__link" id="privacy"
+                                               data-menu-privacy></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="Disclaimer.html" class="multi__link" id="disclaimer"
+                                               data-menu-disclaimer></a>
+                                        </li>
+                                        <li class="menu__submenu">
+                                            <a href="KYC.html" class="multi__link" id="kyc" data-menu-kyc></a>
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+
+                            <li class="menu__item">
+                                <a href="AboutUs.html" class="menu__link header__link" id="aboutpage"
+                                   data-menu-aboutUs></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts" class="menu__link header__link" id="contactsScroll"
+                                   data-goto="contacts" data-menu-contacts></a>
+                            </li>
+
+                            @@include('components/Buttons/TabletButtons.html')
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="menu__registrations no-mobile">
+
+                <a class="menu__btn btn-tablet--transparent" data-company-login href="#">
+                    <div class="menu__login">
+                        <p class="icon__text" data-menuBtn-login></p>
+                    </div>
+                </a>
+                <a class="menu__registrations btn-tablet--color" data-company-register href="#">
+                    <div class="menu__reg">
+                        <p class="icon__text" data-menuBtn-signUp></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="menu__icon">
+            <span></span>
+        </div>
+
+    </div>
+    <div class="langs" id="language">
+        <ul class="langs__menu header__link" data-menu="multiMenu">
+            <span id="active-lang"></span>
+            <div class="menu__multi" data-list="multiList">
+                <div class="langs__multi-inner" id="langs">
+
+                </div>
+            </div>
+
+        </ul>
+    </div>
+</header>

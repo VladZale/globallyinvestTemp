@@ -1,0 +1,59 @@
+@@include('page/Head.html')
+<body>
+<div class="wrapper" id="wrapper">
+
+    @@include('Header.html')
+
+    <section class="technical-analysis page">
+        <div class="page__bg"></div>
+
+        <div class="technical-analysis__container container">
+            <div class="technical-analysis__inner page__inner">
+                <div class="technical-analysis__left page__left">
+                    @@include('components/PagesBg/indicesDevPlanet.html')
+                </div>
+                <div class="technical-analysis__right">
+                    <h2 class="technical-analysis__title page__title" data-menu-technicalAnalysis></h2>
+                    <div class="technical-analysis__content page__content">
+                        <div class="technical-analysis__item page__item">
+                            <h3 class="technical-analysis__item-title page__item-title"
+                                data-technicalAnalysis-technicalAnalysis></h3>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-descHead1></p>
+
+                            <ul class="technical-analysis__list page__list">
+                                <h5 class="technical-analysis__list-title page__list-title" data-key-text></h5>
+                                <div class="page__list-content">
+                                    <li data-technicalAnalysis-list1></li>
+                                    <li data-technicalAnalysis-list2></li>
+                                    <li data-technicalAnalysis-list3></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="technical-analysis__item page__item">
+                            <h3 class="technical-analysis__item-title page__item-title" data-technicalAnalysis-understanding></h3>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUnderstanding1></p>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUnderstanding2></p>
+                            <p class="technical-analysis__desc page__desc"data-technicalAnalysis-textUnderstanding3></p>
+                        </div>
+                        <div class="technical-analysis__item page__item">
+                            <h3 class="technical-analysis__item-title page__item-title" data-technicalAnalysis-using></h3>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUsing1></p>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUsing2></p>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUsing3></p>
+                            <p class="technical-analysis__desc page__desc" data-technicalAnalysis-textUsing4></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('page/Footer.html')
+
+    @@include('components/ScrollToTopBtn.html')
+</div>
+
+@@include('page/Scripts.html')
+</body>
+
+</html>

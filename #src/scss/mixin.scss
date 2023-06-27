@@ -1,0 +1,30 @@
+@mixin lShadow {
+  box-shadow: 20px 20px 30px 0 rgb(199 199 199 / 70%);
+}
+
+@mixin llShadow{
+  box-shadow: 20px 20px 30px 0 rgb(199 199 199 / 40%);
+
+}
+
+@mixin mShadow {
+  box-shadow: 20px 20px 35px 0px rgba(199, 199, 199, 0.2);
+}
+
+
+@mixin greenShadow {
+  box-shadow: 0 5px 30px 0px rgba($accent, .7);
+}
+
+
+@mixin sShadow {
+  box-shadow: 5px 5px 20px 15px rgb(34 34 34 / 10%);
+}
+
+@mixin btnShadow {
+  box-shadow: 0 5px 30px 0px rgba(#58e149, .7);
+}
+
+@mixin headerShadow {
+  box-shadow: 0px 10px 15px -7px rgb(173 170 170);
+}
